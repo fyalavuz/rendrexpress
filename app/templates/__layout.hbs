@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset='utf-8'/>
+    <title>Express.js 4.2.0 and Rendr.js Middleware Sample App</title>
+    <link href="/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <a href="/">index</a>
+      <a href="/home/sample">sample</a>
+    </nav>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <section id="content" class="container">
+      {{{body}}}
+    </section>
+    <section class="container"></section>
+    <script src="/mergedAssets.js"></script>
+    <script>
+    (function() {
+      var App = window.App = new (require('app/app'))({{json appData}});
+      App.bootstrapData({{json bootstrappedData}});
+      App.start();
+    })();
+    </script>
+
+  </body>
+
+</html>

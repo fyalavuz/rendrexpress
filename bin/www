@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+var debug = require('debug')('fiyatmarketi');
+var app = require('../app');
+var rendr = require('rendr');
+var mw = require('../server/middleware');
+
+app.set('port', process.env.PORT || 3000);
+
+var server = rendr.createServer();
+
+server.configure(function(rendrExpressApp) {
+	//configutarion definitions
+});
+
+app.use(mw.addLocaleToRequest());
+app.use(server);
+
+app.listen(app.get('port'), function() {
+  debug('Express server listening on port ' + process.env.PORT || 3000);
+});
+

@@ -1,0 +1,34 @@
+{
+  "name": "fiyatmarketi",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0",
+    "express": "~3",
+    "jquery": "*",
+    "underscore": "~1.5.2",
+    "async": "~0.1.22",
+    "rendr-handlebars": "0.2.0",
+    "rendr": "0.5.0",
+    "config": "~0.4.30",
+    "js-yaml": "2.x.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-browserify": "~1.2.9",
+    "grunt-contrib-handlebars": "~0.5.11",
+    "grunt-contrib-watch": "~0.3.1",
+    "nodemon": "~0.7.6",
+    "mocha": "~1.9.0",
+    "should": "~1.2.2"
+  }
+}
